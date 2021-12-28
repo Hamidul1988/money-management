@@ -1,16 +1,12 @@
 const router = require('express').Router()
 
-const {login} = require('../controllers/usercontroler')
+const {login,register} = require('../controllers/usercontroler')
 
 
 //Register
 //http://localhost:4000/api/users/register
-router.post('/register',(req,res)=>{
-
-    res.json({
-        message:"Hamid"
-    })
-})
+router.post('/register',register
+)
 
 //login
 //http://localhost:4000/api/users/login
