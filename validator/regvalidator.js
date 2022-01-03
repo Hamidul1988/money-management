@@ -20,7 +20,7 @@ let validate = user =>{
     if(!user.password){
         eror.password= "please Enter password"
 
-    }else if(!user.password.length<6){
+    }else if(!user.password.length > 6 ){
         eror.password= "please Enter Gater Then 6  Characters"
     }
 

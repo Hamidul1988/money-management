@@ -14,6 +14,8 @@ const Userouter = require('./routes/userRoute')
 const app = express()
 const Port = process.env.Port || 4000
 
+
+
 app.use(morgan("dev"))
 app.use(cors())
 app.use(bodyparser.urlencoded({extended:false}))
